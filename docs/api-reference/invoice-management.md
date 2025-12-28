@@ -13,8 +13,7 @@ Manage your invoices through the complete lifecycle: signing, tracking, and upda
 
 Sign an invoice directly with FIRS by providing all invoice details.
 
-<details>
-<summary><code>POST</code> <code><b>/api/invoices/sign</b></code></summary>
+### `POST` `/api/invoices/sign`
 
 **Authentication Required:** ✅ JWT or API Key  
 **Required Scope:** `invoice:sign`
@@ -122,14 +121,11 @@ curl -X POST https://api.firs-einvoice.com/api/invoices/sign \
 
 > **💡 Note:** Supplier party information (business ID, TIN, address, etc.) is automatically fetched from your tenant configuration. You don't need to provide it in the request.
 
-</details>
-
 ## Sign Invoice from ERP Order
 
 Automatically fetch invoice data from your configured ERP system and sign it. This is the easiest way to sign invoices if you have ERP integration set up.
 
-<details>
-<summary><code>POST</code> <code><b>/api/invoices/sign-from-order</b></code></summary>
+### `POST` `/api/invoices/sign-from-order`
 
 **Authentication Required:** ✅ JWT or API Key  
 **Required Scope:** `invoice:sign-from-order`
@@ -217,14 +213,11 @@ curl -X POST https://api.firs-einvoice.com/api/invoices/sign-from-order \
 
 > **⚠️ Prerequisite:** You must configure your ERP system first using the `/api/tenants/{tenantId}/erp-configs` endpoint.
 
-</details>
-
 ## Get Invoice Details
 
 Retrieve invoice details from FIRS by IRN.
 
-<details>
-<summary><code>GET</code> <code><b>/api/invoices/{irn}</b></code></summary>
+### `GET` `/api/invoices/{irn}`
 
 **Authentication Required:** ✅ JWT or API Key  
 **Required Scope:** `invoice:read`
@@ -266,14 +259,11 @@ curl -X GET https://api.firs-einvoice.com/api/invoices/TSP0110134-B17E2F91-20251
   -H "Authorization: Bearer your-access-token"
 ```
 
-</details>
-
 ## Update Invoice Status
 
 Update the payment status of an invoice.
 
-<details>
-<summary><code>PATCH</code> <code><b>/api/invoices/{irn}/status</b></code></summary>
+### `PATCH` `/api/invoices/{irn}/status`
 
 **Authentication Required:** ✅ JWT or API Key  
 **Required Scope:** `invoice:update`
@@ -324,6 +314,4 @@ curl -X PATCH https://api.firs-einvoice.com/api/invoices/TSP0110134-B17E2F91-202
     "reference": "PAYMENT-REF-12345"
   }'
 ```
-
-</details>
 
