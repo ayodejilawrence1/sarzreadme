@@ -1,0 +1,23 @@
+# README.io Configuration
+# This file helps README.io understand your documentation structure
+
+version: "1.0"
+docs_path: ".readme"
+
+# Category mappings
+categories:
+  Introduction:
+    - overview.md
+    - getting-started.md
+  "API Reference":
+    - authentication.md
+    - qr-code-generation.md
+    - invoice-management.md
+  Guides:
+    - erp-integration.md
+    - error-handling.md
+    - best-practices.md
+  Resources:
+    - support.md
+    - changelog.md
+
