@@ -13,8 +13,7 @@ Connect your ERP system to automatically fetch invoice data. Supported systems i
 
 Set up your ERP system connection. This enables the `/api/invoices/sign-from-order` endpoint to automatically fetch invoice data.
 
-<details>
-<summary><code>POST</code> <code><b>/api/tenants/{tenantId}/erp-configs</b></code></summary>
+### `POST` `/api/tenants/{tenantId}/erp-configs`
 
 **Authentication Required:** ✅ JWT  
 **Required Scope:** User must have access to the tenant
@@ -194,15 +193,14 @@ curl -X POST https://api.firs-einvoice.com/api/tenants/{tenantId}/erp-configs \
 
 > **🎯 Pro Tip:** After configuring your ERP, you can use `/api/invoices/sign-from-order` with just the order number. All invoice details will be automatically fetched!
 
-</details>
-
 ## Supported ERP Systems
 
 | ERP System | Status | Authentication Methods |
 |------------|--------|------------------------|
 | **Microsoft Dynamics 365 Business Central** | ✅ Supported | OAuth 2.0, Basic Auth |
 | **Microsoft Dynamics NAV** | ✅ Supported | Basic Auth |
-| **Oracle ERP** | 🚧 Coming Soon | TBD |
+| **Oracle e-Business Suite** | 🚧 Coming Soon | TBD |
+| **Oracle Fusion** | 🚧 Coming Soon | TBD |
 | **SAP** | 🚧 Coming Soon | TBD |
 | **Sage** | 🚧 Coming Soon | TBD |
 | **Vanilla (Custom)** | ✅ Supported | Custom configuration |
