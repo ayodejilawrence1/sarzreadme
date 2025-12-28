@@ -1,0 +1,56 @@
+{
+  "version": "1.0.0",
+  "pages": [
+    {
+      "title": "Overview",
+      "path": "overview.md",
+      "category": "Introduction"
+    },
+    {
+      "title": "Getting Started",
+      "path": "getting-started.md",
+      "category": "Introduction"
+    },
+    {
+      "title": "Authentication",
+      "path": "authentication.md",
+      "category": "API Reference"
+    },
+    {
+      "title": "QR Code Generation",
+      "path": "qr-code-generation.md",
+      "category": "API Reference"
+    },
+    {
+      "title": "Invoice Management",
+      "path": "invoice-management.md",
+      "category": "API Reference"
+    },
+    {
+      "title": "ERP Integration",
+      "path": "erp-integration.md",
+      "category": "Guides"
+    },
+    {
+      "title": "Error Handling",
+      "path": "error-handling.md",
+      "category": "Guides"
+    },
+    {
+      "title": "Best Practices",
+      "path": "best-practices.md",
+      "category": "Guides"
+    },
+    {
+      "title": "Support",
+      "path": "support.md",
+      "category": "Resources"
+    },
+    {
+      "title": "Changelog",
+      "path": "changelog.md",
+      "category": "Resources"
+    }
+  ]
+}
+
